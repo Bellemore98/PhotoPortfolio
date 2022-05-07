@@ -1,0 +1,346 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack Bellemore</title>
+        <!--Icons used in this project are from IconFinder-->
+        <link rel="stylesheet" href="W3.CSS">
+        <link rel="stylesheet" href="general_stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">   
+        <style>
+            body {
+                font-family: 'Archivo', sans-serif;
+            }
+            .page1 {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+            }
+            .title {
+                position: fixed;
+                top: 7%;
+                left:8%;
+                height: 15%;
+                z-index: 3;
+                text-align: center;
+                font-size: 3.0em;
+                text-shadow: 0 0 30px rgb(0, 0, 0);
+                font-weight: 600;
+            }
+            .slideshow {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                z-index: 2;
+            }
+            .slideshow-image {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: no-repeat 50% 50%;
+                background-size: cover;
+                -webkit-animation-name: kenburns;
+                animation-name: kenburns;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-duration: 20s;
+                animation-duration: 20s;
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            .slideshow-image:nth-child(1) {
+                -webkit-animation-name: kenburns-1;
+                animation-name: kenburns-1;
+                z-index: 3;
+            }
+            .slideshow-image:nth-child(2) {
+                -webkit-animation-name: kenburns-2;
+                animation-name: kenburns-2;
+                z-index: 2;
+            }
+            .slideshow-image:nth-child(3) {
+                -webkit-animation-name: kenburns-3;
+                animation-name: kenburns-3;
+                z-index: 1;
+            }
+            .slideshow-image:nth-child(4) {
+                -webkit-animation-name: kenburns-4;
+                animation-name: kenburns-4;
+                z-index: 0;
+            }
+            @-webkit-keyframes 
+                kenburns-1 {  0% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            1.5625% {
+                opacity: 1;
+            }
+            23.4375% {
+                opacity: 1;
+            }
+            26.5625% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            98.4375% {
+                opacity: 0;
+                -webkit-transform: scale(1.21176);
+                transform: scale(1.21176);
+            }
+            100% {
+                opacity: 1;
+            }
+            }
+            @keyframes 
+                kenburns-1 {  0% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            1.5625% {
+                opacity: 1;
+            }
+            23.4375% {
+                opacity: 1;
+            }
+            26.5625% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            98.4375% {
+                opacity: 0;
+                -webkit-transform: scale(1.21176);
+                transform: scale(1.21176);
+            }
+            100% {
+                opacity: 1;
+            }
+            }
+            @-webkit-keyframes 
+                kenburns-2 {  23.4375% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            26.5625% {
+                opacity: 1;
+            }
+            48.4375% {
+                opacity: 1;
+            }
+            51.5625% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            }
+            @keyframes 
+                kenburns-2 {  23.4375% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            26.5625% {
+                opacity: 1;
+            }
+            48.4375% {
+                opacity: 1;
+            }
+            51.5625% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            }
+            @-webkit-keyframes 
+                kenburns-3 {  48.4375% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            51.5625% {
+                opacity: 1;
+            }
+            73.4375% {
+                opacity: 1;
+            }
+            76.5625% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            }
+            @keyframes 
+                kenburns-3 {  48.4375% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            51.5625% {
+                opacity: 1;
+            }
+            73.4375% {
+                opacity: 1;
+            }
+            76.5625% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            }
+            @-webkit-keyframes 
+                kenburns-4 {  73.4375% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            76.5625% {
+                opacity: 1;
+            }
+            98.4375% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            }
+            @keyframes 
+                kenburns-4 {  73.4375% {
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            76.5625% {
+                opacity: 1;
+            }
+            98.4375% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            }
+            /* End Slideshow Attempt CSS */
+        </style>
+    </head>
+
+    <body>
+        <div class="page1">
+            <!-- Large & Madium NavBar-->
+            <div class="menubar w3-hide-small">
+                <div class="button w3-hover-light-gray w3-hide-small">
+                    <a href="index.html" style="text-decoration: none;"> 
+                        <p><strong>Home</strong></p>
+                    </a> 
+                </div> 
+                <div class="button w3-hover-light-gray">
+                    <a href="website_about_me.html" style="text-decoration: none;">
+                        <p><strong>About Me</strong></p>
+                    </a>
+                </div>
+                <div class="button w3-hover-light-gray">
+                    <a href="website_foliage.html" style="text-decoration: none;">
+                        <p><Strong>Fall Foliage</Strong></p>
+                    </a>
+                </div>
+                <div class="button w3-hover-light-gray"> 
+                    <a href="website_skiing.html" style="text-decoration: none;">
+                        <p><strong> Skiing </strong></p> 
+                    </a>
+                </div>
+                <div class="button w3-hover-light-gray"> 
+                    <a href="website_portraits.html" style="text-decoration: none;"> 
+                        <p><strong> Portraits</strong></p>
+                    </a>
+                </div>
+                <div class="button w3-hover-light-gray"> 
+                    <a href="landscapes.html" style="text-decoration: none;"> 
+                        <p><strong> Landscapes</strong></p>
+                    </a>
+                </div>     
+            </div>
+            <!-- End Large/Medium NavBar-->
+
+            <!-- Small NavBar-->
+            <div class="small-menubar w3-hide-large w3-hide-medium" style="z-index:4; width: 100%;"> 
+                <div class=" w3-bar w3-white">
+                    <a href="#" class="w3-bar-item w3-button"> Home</a>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button"> More </button>
+                        <div class="w3-dropdown-content w3-bar-block">
+                            <a href="website_about_me.html" class="w3-bar-item w3-white w3-button"> About Me</a>
+                            <a href="website_foliage.html" class="w3-bar-item w3-white w3-button"> Fall Foliage</a>
+                            <a href="website_skiing.html" class="w3-bar-item w3-white w3-button"> Skiing</a>
+                            <a href="website_portraits.html" class="w3-bar-item w3-white w3-button"> Portraits</a>
+                            <a href="#" class="w3-bar-item w3-white w3-button"> Landscapes</a>
+                            <a href="#" class="w3-bar-item w3-white w3-button"> Contact & Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Small NavBar -->
+
+            <!-- Titles-->
+            <div class="title w3-container w3-transparent w3-text-white">
+                <p class="w3-hide-small w3-hide-medium" style="margin-bottom: 0px;"><strong> Jack Bellemore: Photographer </strong></p>
+                <p class="w3-hide-large w3-hide-small w3-xxlarge w3-padding" style="margin-top: 20px;"><strong> Jack Bellemore: Photographer</strong></p>
+                <p class="w3-hide-large w3-hide-medium w3-xlarge w3-padding" style="margin-top: 20px;"><strong> Jack Bellemore: Photographer</strong></p>
+            </div>
+
+            <!-- Slideshow Attempt HTML-->
+            <div class="slideshow">
+                <div class="slideshow-image" style="background-image: url('imgs/Rumney1.jpg')"></div>
+                <div class="slideshow-image" style="background-image: url('imgs/Hiking.JPG')"></div>
+                <div class="slideshow-image" style="background-image: url('imgs/BDWash.JPG')"></div>
+                <div class="slideshow-image" style="background-image: url('imgs/Portrait5.jpg')"></div>
+            </div>
+            <!-- End Slideshow HTML --> 
+        </div>
+    </body>
+</html>

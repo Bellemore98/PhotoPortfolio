@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack Bellemore</title>
+        <link rel="stylesheet" href="W3.CSS">
+        <link rel="stylesheet" href="general_stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                background-image: url(imgs/portrait2.jpg);
+                background-size: cover;
+                overflow-y: auto;
+                font-family: 'Archivo', sans-serif;
+            }
+            .Title {
+                position: fixed;
+                width: 100%;
+                text-align: center;
+                top: 35%;
+                font-family: 'Archivo', sans-serif;
+                font-size: 3.0em;
+                text-shadow: 0 0 20px rgb(0, 0, 0);
+            }
+            .gallery {
+                position: absolute;
+                width: 100%;
+                top: 60%;
+                text-align: center;
+                padding-bottom: 100px;
+                background-color: rgb(255, 255, 255);
+                z-index: 2;
+            }
+            .photo {
+                margin-top: 10px;
+            }
+            </style>
+
+    </head>
+
+    <body>
+        <!-- Large & Madium NavBar-->
+        <div class="menubar w3-hide-small">
+            <div class="button w3-hover-light-gray w3-hide-small">
+                <a href="index.html" style="text-decoration: none;"> 
+                    <p><strong>Home</strong></p>
+                </a> 
+            </div> 
+            <div class="button w3-hover-light-gray">
+                <a href="website_about_me.html" style="text-decoration: none;">
+                    <p><strong>About Me</strong></p>
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray">
+                <a href="website_foliage.html" style="text-decoration: none;">
+                    <p><Strong>Fall Foliage</Strong></p>
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray"> 
+                <a href="website_skiing.html" style="text-decoration: none;">
+                    <p><strong> Skiing </strong></p> 
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray"> 
+                <a href="website_portraits.html" style="text-decoration: none;"> 
+                    <p><strong> Portraits</strong></p>
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray"> 
+                <a href="landscapes.html" style="text-decoration: none;"> 
+                    <p><strong> Landscapes</strong></p>
+                </a>
+            </div>      
+        </div>
+        <!-- End Large/Medium NavBar-->
+
+        <!-- Small NavBar-->
+        <div class="small-menubar w3-hide-large w3-hide-medium" style="z-index:4; width: 100%;"> 
+            <div class=" w3-bar w3-white">
+                <a href="#" class="w3-bar-item w3-button"> Home</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button"> More </button>
+                    <div class="w3-dropdown-content w3-bar-block">
+                        <a href="website_about_me.html" class="w3-bar-item w3-white w3-button"> About Me</a>
+                        <a href="website_foliage.html" class="w3-bar-item w3-white w3-button"> Fall Foliage</a>
+                        <a href="website_skiing.html" class="w3-bar-item w3-white w3-button"> Skiing</a>
+                        <a href="website_portraits.html" class="w3-bar-item w3-white w3-button"> Portraits</a>
+                        <a href="#" class="w3-bar-item w3-white w3-button"> Landscapes</a>
+                        <a href="#" class="w3-bar-item w3-white w3-button"> Contact & Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Small NavBar -->
+        <div class="content">
+
+            <!-- Large/Medium Title -->
+            <div class="Title w3-hide-small w3-text-white"> 
+                <p> <strong>PORTRAITS </strong> </p>
+            </div>
+
+            <!-- Small Title-->
+            <div class="Title w3-hide-large w3-hide-medium w3-text-white" style="font-size: 2.0em;">
+                <p> <strong> PORTRAITS </strong> </p>
+            </div>
+
+            <div class="gallery w3-row-padding">
+                <div class="w3-third">
+                    <img class="photo" src="imgs/portrait6.jpg" style="width: 100%;" alt="portrait">
+                    <img class="photo" src="imgs/portrait7.jpg" style="width: 100%;" alt="portrait">
+                </div>
+                <div class="w3-third">
+                    <img class="photo" src="imgs/Portrait1.JPG" style="width: 100%; padding-top: 30px;" alt="portrait">
+                    <img class="photo" src="imgs/portraitheader.jpg" style="width: 100%; padding-top: 20px;" alt="portrait">
+                </div>
+                <div class="w3-third">
+                    <img class="photo" src="imgs/Portrait5.jpg" style="width: 100%;" alt="portrait">
+                    <img class="photo" src="imgs/Portrait4.JPG" style="width: 100%;" alt="portrait">
+                </div>    
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerbuttons">
+                <p class="footerinfo"><a href="https://www.instagram.com/jackbellemore.photo/">
+                    <img id="Instagram" src="imgs/instalogo.png" alt="instalogo"></a>
+                </p>
+                <p class="footerinfo"> <a href="mailto:bellemore98@gmail.com"><strong> Bellemore98@gmail.com</strong></a></p>
+                <p class="footerinfo"><a href="https://www.linkedin.com/in/john-bellemore-81056a14a/">
+                    <img id="LinkedIn" src="imgs/linkedin.png" alt="linkedin"> </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

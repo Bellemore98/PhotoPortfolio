@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack Bellemore</title>
+        <link rel="stylesheet" href="W3.CSS">
+        <link rel="stylesheet" href="general_stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+            .page3 {
+                height: 140%;
+                display: flex;
+            }
+            body {
+                background-image: url(imgs/Sunset.JPG);
+                background-size: cover;
+                overflow-y: auto;
+                font-family: 'Archivo', sans-serif;
+            }
+            .HikeInfo {
+                position: absolute;
+                top: 100px;
+                left: 25%;
+                width: 50%;
+                text-align: center;
+                background-color: rgb(255, 255, 255, .4);
+                border-radius: 5px;
+                padding: 5px;
+                z-index: 1;
+            }
+            .Title {
+                position: fixed;
+                text-align: center;
+                width: 100%;
+                top: 20%;
+                font-family: 'Archivo', sans-serif;
+                font-size: 3.0em;
+                text-shadow: 0 0 20px rgb(0, 0, 0);
+            }
+            .gallery {
+                position: absolute;
+                top: 58%;
+                padding-bottom: 100px;
+                text-align: center;
+                background-color: white;
+                z-index: 2;
+            }
+            .photo {
+                margin-top: 10px;
+            }
+            </style>
+    </head>
+
+    <body>
+        <!-- Large & Madium NavBar-->
+        <div class="menubar w3-hide-small">
+            <div class="button w3-hover-light-gray w3-hide-small">
+                <a href="index.html" style="text-decoration: none;"> 
+                    <p><strong>Home</strong></p>
+                </a> 
+            </div> 
+            <div class="button w3-hover-light-gray">
+                <a href="website_about_me.html" style="text-decoration: none;">
+                    <p><strong>About Me</strong></p>
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray">
+                <a href="website_foliage.html" style="text-decoration: none;">
+                    <p><Strong>Fall Foliage</Strong></p>
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray"> 
+                <a href="website_skiing.html" style="text-decoration: none;">
+                    <p><strong> Skiing </strong></p> 
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray"> 
+                <a href="website_portraits.html" style="text-decoration: none;"> 
+                    <p><strong> Portraits</strong></p>
+                </a>
+            </div>
+            <div class="button w3-hover-light-gray"> 
+                <a href="landscapes.html" style="text-decoration: none;"> 
+                    <p><strong> Landscapes</strong></p>
+                </a>
+            </div>      
+        </div>
+        <!-- End Large/Medium NavBar-->
+
+        <!-- Small NavBar-->
+        <div class="small-menubar w3-hide-large w3-hide-medium" style="z-index:4; width: 100%;"> 
+            <div class=" w3-bar w3-white">
+                <a href="#" class="w3-bar-item w3-button"> Home</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button"> More </button>
+                    <div class="w3-dropdown-content w3-bar-block">
+                        <a href="website_about_me.html" class="w3-bar-item w3-white w3-button"> About Me</a>
+                        <a href="website_foliage.html" class="w3-bar-item w3-white w3-button"> Fall Foliage</a>
+                        <a href="website_skiing.html" class="w3-bar-item w3-white w3-button"> Skiing</a>
+                        <a href="website_portraits.html" class="w3-bar-item w3-white w3-button"> Portraits</a>
+                        <a href="#" class="w3-bar-item w3-white w3-button"> Landscapes</a>
+                        <a href="#" class="w3-bar-item w3-white w3-button"> Contact & Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Small NavBar -->
+
+        <div class="content">
+
+            <!-- Large/Medium Title -->
+            <div class="Title w3-hide-small w3-text-white">
+                <p> <strong>FALL IN NEW ENGLAND</strong></p>
+            </div>
+
+            <!-- Small Title -->
+            <div class="Title w3-hide-large w3-hide-medium w3-text-white" style="font-size: 2.0em;">
+                <p> <strong>FALL IN NEW ENGLAND</strong></p>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="gallery w3-row-padding">
+                <div class="photos w3-third">
+                    <img class="photo" src="imgs/acadia.jpg" style="width: 100%;" alt="AcadiaPond">
+                    <img class="photo" src="imgs/Foliage1.jpg" style="width: 100%;" alt="Hiker in Fall Foliage">
+                    <img class="photo" src="imgs/Acadia4.jpg" style="width: 100%;" alt="AcadiaBridge">
+                    <img class="photo" src="imgs/foliage3.jpg" style="width: 100%;" alt="Foliage in NH">
+                </div>
+                <div class="photos w3-third">
+                    <img class="photo" src="imgs/Acadia3.jpg" style="width: 100%;" alt="AcadiaTree">
+                    <img class="photo" src="imgs/Foliage2.jpg" style="width: 100%;" alt="The Watcher, Franconia Notch">
+                    <img class="photo" src="imgs/acadia6.jpg" style="width: 100%;" alt="AcadiaHiker">
+                </div>    
+                <div class="photos w3-third">
+                    <img class="photo" src="imgs/Acadia2.jpg" style="width: 100%;" alt="Acadia">
+                    <img class="photo" src="imgs/Acadia1.jpg" style="width: 100%;" alt="Acadia">
+                    <img class="photo" src="imgs/yorkhouse.jpg" style="width: 100%;" alt="Coastal Home in Maine">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footerbuttons">
+                <p class="footerinfo"><a href="https://www.instagram.com/jackbellemore.photo/">
+                    <img id="Instagram" src="imgs/instalogo.png" alt="instalogo"></a>
+                </p>
+                <p class="footerinfo"> <a href="mailto:bellemore98@gmail.com"><strong> Bellemore98@gmail.com</strong></a></p>
+                <p class="footerinfo"><a href="https://www.linkedin.com/in/john-bellemore-81056a14a/">
+                    <img id="LinkedIn" src="imgs/linkedin.png" alt="linkedin"> </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+
